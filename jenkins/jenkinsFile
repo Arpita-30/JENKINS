@@ -9,19 +9,21 @@
 
 pipeline{
     agent any
-    stage('build'){
-        steps{
-            echo "build"
+    stages{
+        stage('build'){
+            steps{
+                echo "build"
+            }
         }
-    }
-    stage('test'){
-        steps{
-            echo "test"
+        stage('test'){
+            steps{
+                echo "test"
+            }
         }
-    }
-    stage('integation test'){
-        steps{
-            echo "Intregation test"
+        stage('integation test'){
+            steps{
+                echo "Intregation test"
+            }
         }
     }
     
