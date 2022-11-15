@@ -19,7 +19,7 @@ pipeline{
         stage('build'){
             steps{
                 //sh 'node --version'
-                sh 'mvn --version'
+                bat 'mvn --version'
                 //echo "mvn --version"
                 echo "build"
                 echo "$PATH"
